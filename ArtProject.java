@@ -17,13 +17,39 @@ class graphic extends JPanel{
 
         FontMetrics fM = b.getFontMetrics();
 
-        b.drawLine(100, 100, 900, 900);
-        b.drawOval(100, 100, 100, 200);
-        int[] a = {100, 200, 300, 200, 500, 900};
-        int[] a2 = {100, 400, 25, 900, 100, 350};
-        b.drawPolygon(a, a2, 6);
-        b.drawOval(200, 100, 100, 200);
-        b.drawRect(165, 250, 60, 300);
+        b.setColor(Color.BLUE);
+        b.fillRect(0, 0, 1000, 1000);
+
+        b.setColor(Color.green);
+        b.fillRect(0, 800, 1000, 200);
+
+        b.setColor(Color.yellow);
+        int[] hx = {200, 200, 400, 600, 600};
+        int[] hy = {800, 400, 200, 400, 800};
+        b.fillPolygon(hx, hy, 5);
+
+        b.setColor(Color.red);
+        b.fillRect(500, 700, 200, 100);
+        b.fillRect(550, 300, 100, 400);
+        int[] cx = {525, 525, 600, 675, 675};
+        int[] cy = {300, 250, 200, 250, 300};
+        b.fillPolygon(cx, cy, 5);
+
+        b.setColor(Color.white);
+        b.fillOval(400, 50, 300, 100);
+
+        b.setColor(Color.orange);
+        b.fillRect(300, 600, 100, 200);
+
+        b.setColor(Color.yellow);
+        b.fillOval(310 ,690, 20, 20);
+
+        b.setColor(Color.blue);
+        b.fillRect(450, 600, 100, 100);
+
+        b.setColor(Color.white);
+        b.drawLine(500, 600, 500, 700);
+        b.drawLine(450, 650, 550, 650);
 
 
     }
