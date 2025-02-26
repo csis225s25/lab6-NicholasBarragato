@@ -4,9 +4,9 @@ import javax.swing.*;
 /**
  * Lab 6 starter example
  * 
- * @author Jim Teresco
- * @author Ira Goldstein
- * @version Spring 2025
+ * @author Nicholas Barragato
+ * @author Patrick Liszewski
+ * @version 2/26/25
  */
 
 // a class that extends JPanel to override the paintComponent method,
